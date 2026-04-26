@@ -22,7 +22,6 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        {/* Logo */}
         <span
           className="text-2xl text-white tracking-wide cursor-pointer"
           style={{fontFamily: "'Permanent Marker', cursive"}}
@@ -30,7 +29,6 @@ const Navbar = () => {
           Hammad
         </span>
 
-        {/* Desktop Links */}
         <ul className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
             <li key={link} className="relative group">
@@ -50,7 +48,6 @@ const Navbar = () => {
           ))}
         </ul>
 
-        {/* Contact Me Button */}
         <Link
           to="contact"
           smooth={true}
@@ -61,7 +58,6 @@ const Navbar = () => {
           Contact Me
         </Link>
 
-        {/* Mobile Hamburger */}
         <button
           className="md:hidden text-gray-300 hover:text-cyan-400 transition-colors text-2xl"
           onClick={() => setMenuOpen(!menuOpen)}
@@ -70,7 +66,6 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Menu */}
       {menuOpen && (
         <div className="md:hidden bg-[#0a0a0f]/98 backdrop-blur-md border-t border-white/5 px-6 py-4">
           <ul className="flex flex-col gap-4">
