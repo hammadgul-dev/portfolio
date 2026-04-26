@@ -2,7 +2,6 @@ import {TypeAnimation} from "react-type-animation"
 import {Link} from "react-scroll"
 import {motion} from "framer-motion"
 import myImg from "../assets/images/My Img.jpg"
-// import cv from "../assets/cv.pdf"
 
 const Hero = () => {
   return (
@@ -68,7 +67,7 @@ const Hero = () => {
               See Projects
             </Link>
             <button
-              onClick={() => window.open("/cv.pdf", "_blank")}
+              onClick={() => window.open("/MERN_CV.pdf", "_blank")}
               className="px-7 py-3 border border-cyan-400 text-cyan-400 text-sm font-semibold rounded-full hover:bg-cyan-400 hover:text-black transition-all duration-300 cursor-pointer"
             >
               Download CV
