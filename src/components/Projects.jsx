@@ -34,7 +34,7 @@ const projects = [
     title: "Advance Product Page",
     description:
       "A React product page with Redux state management, filtering, image uploads, and detailed product views.",
-    tags: ["React", "Redux", "Tailwind CSS"],
+    tags: ["React", "Redux", "Vanilla CSS"],
     live: "#",
   },
 ]
