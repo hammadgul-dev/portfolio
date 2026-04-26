@@ -51,10 +51,10 @@ const Hero = () => {
             />
           </div>
 
-          <p className="text-gray-400 text-sm leading-relaxed max-w-lg mb-8">
-            I build full-stack web applications using MongoDB, Express, React,
-            and Node.js. I love creating apps that are smooth, scalable, and
-            user-friendly.
+          <p className="text-gray-400 text-justify text-sm leading-relaxed max-w-lg mb-8">
+            MERN Stack Developer with 2+ years of experience building modern,
+            scalable web apps — from responsive frontends to powerful backend
+            APIs. Clean code, real results.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center md:items-start gap-4">
