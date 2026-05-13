@@ -51,7 +51,7 @@ const Hero = () => {
           </div>
 
           <p className="text-gray-400 text-justify text-sm leading-relaxed max-w-lg mb-8">
-            MERN Stack Developer with 2+ years of experience building modern,
+            MERN Stack Developer with 3+ years of experience building modern,
             scalable web apps — from responsive frontends to powerful backend
             APIs. Clean code, real results.
           </p>
