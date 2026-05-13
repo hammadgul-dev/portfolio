@@ -2,7 +2,7 @@ import {motion} from "framer-motion"
 import {FaGraduationCap, FaBriefcase, FaCode} from "react-icons/fa"
 
 const stats = [
-  {icon: <FaBriefcase />, value: "2+", label: "Years Experience"},
+  {icon: <FaBriefcase />, value: "3+", label: "Years Experience"},
   {icon: <FaCode />, value: "10+", label: "Projects Completed"},
   {icon: <FaGraduationCap />, value: "4th", label: "Semester @ UET"},
 ]
@@ -41,7 +41,7 @@ const About = () => {
               Hi, I'm <span className="text-cyan-400">Hammad Gul</span>
             </h3>
             <p className="text-gray-400 text-justify text-sm leading-relaxed mb-4">
-              A MERN Stack Developer with 2+ years of experience building
+              A MERN Stack Developer with 3+ years of experience building
               modern, scalable web applications — from clean responsive
               frontends to solid backend APIs.
             </p>
@@ -52,8 +52,8 @@ const About = () => {
             </p>
             <p className="text-gray-400 text-justify text-sm leading-relaxed mb-8">
               Currently pursuing BS Computer Engineering at UET Peshawar — and
-              always leveling up with TypeScript, Next.js, Docker, and AI
-              integration.
+              recently expanded my stack with TypeScript, Next.js, and Stripe
+              payments. Still learning, still building.
             </p>
 
             <div className="flex items-start gap-4 bg-white/5 border border-white/10 rounded-xl p-4">
