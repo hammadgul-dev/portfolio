@@ -72,7 +72,7 @@ const About = () => {
           </motion.div>
 
           <motion.div
-            className="flex-1 grid grid-cols-1 gap-6"
+            className="flex-1 w-full grid grid-cols-1 gap-6"
             initial={{opacity: 0, x: 40}}
             whileInView={{opacity: 1, x: 0}}
             transition={{duration: 0.6}}
@@ -81,7 +81,7 @@ const About = () => {
             {stats.map((stat, i) => (
               <div
                 key={i}
-                className="flex items-center gap-5 bg-white/5 border border-white/10 rounded-xl p-5 hover:border-cyan-400/40 transition-all duration-300"
+                className="flex items-center gap-5 bg-white/5 border border-white/10 rounded-xl p-5 hover:border-cyan-400/40 transition-all duration-300 w-full"
               >
                 <div className="text-cyan-400 text-3xl">{stat.icon}</div>
                 <div>
