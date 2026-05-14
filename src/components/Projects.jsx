@@ -16,7 +16,7 @@ const projects = [
       "JWT",
       "Cloudinary",
     ],
-    image: "/Project Images/FreshCart.png",
+    image: "/portfolio/ProjectImages/FreshCart.png",
     live: "https://freshcart-frontend-tau.vercel.app",
     github: "https://github.com/hammadgul-dev/freshcart-backend",
   },
@@ -34,7 +34,7 @@ const projects = [
       "Cloudinary",
       "Groq AI",
     ],
-    image: "/Project Images/Blogify.png",
+    image: "/portfolio/ProjectImages/Blogify.png",
     live: "https://blogify-frontend-blue-seven.vercel.app",
     github: "https://github.com/hammadgul-dev/blogify",
   },
@@ -43,7 +43,7 @@ const projects = [
     description:
       "Real-time online code editor with live preview, multi-panel layout for HTML/CSS/JS, theme switcher, and copy to clipboard.",
     tags: ["HTML", "CSS", "JavaScript"],
-    image: "/Project Images/Code Editor.png",
+    image: "/portfolio/ProjectImages/CodeEditor.png",
     live: "https://hammadgul-dev.github.io/code-editor/",
     github: "#",
   },
@@ -52,7 +52,7 @@ const projects = [
     description:
       "React product page with Redux state management, user login, product filtering & sorting, image upload, and LocalStorage persistence.",
     tags: ["React", "Redux", "React Router"],
-    image: "/Project Images/Product Page.png",
+    image: "/portfolio/ProjectImages/ProductPage.png",
     live: "https://hammadgul-dev.github.io/advance-product-page/",
     github: "#",
   },
@@ -61,12 +61,11 @@ const projects = [
     description:
       "Lightweight music player with play/pause, next/prev navigation, volume control, keyboard shortcuts, and fully responsive UI.",
     tags: ["HTML", "CSS", "JavaScript"],
-    image: "/Project Images/Music Player.png",
+    image: "/portfolio/ProjectImages/MusicPlayer.png",
     live: "http://hammadgul-dev.github.io/music-player/",
     github: "#",
   },
 ]
-
 const Projects = () => {
   return (
     <section
