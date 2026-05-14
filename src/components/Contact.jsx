@@ -1,11 +1,17 @@
-import {useState} from "react"
+import {useState, useRef} from "react"
 import {motion} from "framer-motion"
 import {FiMail, FiMapPin, FiPhone} from "react-icons/fi"
+import emailjs from "@emailjs/browser"
+
+const SERVICE_ID = "service_08f9yyh"
+const TEMPLATE_ID = "template_e1iynw9"
+const PUBLIC_KEY = "r5K5Q7cThT3vaszBo"
 
 const Contact = () => {
   const [form, setForm] = useState({name: "", email: "", message: ""})
   const [status, setStatus] = useState("")
   const [loading, setLoading] = useState(false)
+  const lastEmailRef = useRef("")
 
   const handleChange = (e) => {
     setForm({...form, [e.target.name]: e.target.value})
@@ -13,22 +19,34 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
+
+    if (!form.name || !form.email || !form.message) {
+      setStatus("empty")
+      return
+    }
+
+    if (form.email === lastEmailRef.current) {
+      setStatus("duplicate")
+      return
+    }
+
     setLoading(true)
     setStatus("")
 
     try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: {"Content-Type": "application/json"},
-        body: JSON.stringify(form),
-      })
-
-      if (res.ok) {
-        setStatus("success")
-        setForm({name: "", email: "", message: ""})
-      } else {
-        setStatus("error")
-      }
+      await emailjs.send(
+        SERVICE_ID,
+        TEMPLATE_ID,
+        {
+          from_name: form.name,
+          from_email: form.email,
+          message: form.message,
+        },
+        PUBLIC_KEY,
+      )
+      lastEmailRef.current = form.email
+      setStatus("success")
+      setForm({name: "", email: "", message: ""})
     } catch {
       setStatus("error")
     } finally {
@@ -78,7 +96,7 @@ const Contact = () => {
               <div>
                 <p className="text-white text-sm font-semibold">Email</p>
                 <p className="text-gray-400 text-sm mt-1">
-                  hammadgul140413@gmail.com
+                  iamhammad148@gmail.com
                 </p>
               </div>
             </div>
@@ -139,19 +157,29 @@ const Contact = () => {
               <button
                 onClick={handleSubmit}
                 disabled={loading}
-                className="w-full py-3 bg-cyan-400 text-black text-sm font-semibold rounded-xl hover:bg-cyan-300 transition-all duration-300 cursor-pointer disabled:opacity-50"
+                className="w-full py-3 bg-cyan-400 text-black text-sm font-semibold rounded-xl hover:bg-cyan-300 transition-all duration-300 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {loading ? "Sending..." : "Send Message"}
               </button>
 
               {status === "success" && (
                 <p className="text-green-400 text-sm text-center">
-                  Message sent successfully!
+                  ✅ Message sent!
+                </p>
+              )}
+              {status === "duplicate" && (
+                <p className="text-yellow-400 text-sm text-center">
+                  ⚠️ Already sent from this email.
+                </p>
+              )}
+              {status === "empty" && (
+                <p className="text-yellow-400 text-sm text-center">
+                  ⚠️ Fill in all fields.
                 </p>
               )}
               {status === "error" && (
                 <p className="text-red-400 text-sm text-center">
-                  Something went wrong. Please try again.
+                  ❌ Try again.
                 </p>
               )}
             </div>
