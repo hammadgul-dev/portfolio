@@ -5,37 +5,65 @@ const projects = [
   {
     title: "FreshCart",
     description:
-      "A full-stack eCommerce platform with JWT authentication, product management, cart system, order tracking, and TanStack Query for data fetching.",
-    tags: ["React", "Node.js", "Express", "MongoDB", "JWT", "TanStack Query"],
+      "Full-stack eCommerce platform with JWT auth, dual product catalog, smart search, advanced filtering, cart management, and Cloudinary image storage.",
+    tags: [
+      "React",
+      "Redux Toolkit",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "TanStack Query",
+      "JWT",
+      "Cloudinary",
+    ],
+    image: "/Project Images/FreshCart.png",
     live: "https://freshcart-frontend-tau.vercel.app",
+    github: "https://github.com/hammadgul-dev/freshcart-backend",
   },
   {
     title: "Blogify",
     description:
-      "A full-stack blog platform with JWT auth, rich text editor, category filtering, and Resend email integration.",
-    tags: ["React", "Node.js", "MongoDB", "JWT", "Resend", "TanStack Query"],
-    live: "#",
+      "Full-stack blog platform with JWT auth, Google OAuth, AI-powered descriptions & thumbnails, rich blog management, comment system, and dark/light mode.",
+    tags: [
+      "React",
+      "Redux Toolkit",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "TanStack Query",
+      "Cloudinary",
+      "Groq AI",
+    ],
+    image: "/Project Images/Blogify.png",
+    live: "https://blogify-frontend-blue-seven.vercel.app",
+    github: "https://github.com/hammadgul-dev/blogify",
   },
   {
-    title: "Task Manager",
+    title: "Code Editor",
     description:
-      "A feature-rich task manager with category-wise filtering, add, delete, and update tasks — built with vanilla HTML, CSS, and JavaScript.",
+      "Real-time online code editor with live preview, multi-panel layout for HTML/CSS/JS, theme switcher, and copy to clipboard.",
     tags: ["HTML", "CSS", "JavaScript"],
-    live: "#",
+    image: "/Project Images/Code Editor.png",
+    live: "https://hammadgul-dev.github.io/code-editor/",
+    github: "#",
+  },
+  {
+    title: "Advanced Product Page",
+    description:
+      "React product page with Redux state management, user login, product filtering & sorting, image upload, and LocalStorage persistence.",
+    tags: ["React", "Redux", "React Router"],
+    image: "/Project Images/Product Page.png",
+    live: "https://hammadgul-dev.github.io/advance-product-page/",
+    github: "#",
   },
   {
     title: "Music Player",
     description:
-      "A responsive music player with play/pause, next/previous track, volume control, and keyboard shortcuts.",
+      "Lightweight music player with play/pause, next/prev navigation, volume control, keyboard shortcuts, and fully responsive UI.",
     tags: ["HTML", "CSS", "JavaScript"],
-    live: "#",
-  },
-  {
-    title: "Advance Product Page",
-    description:
-      "A React product page with Redux state management, filtering, image uploads, and detailed product views.",
-    tags: ["React", "Redux", "Vanilla CSS"],
-    live: "#",
+    image: "/Project Images/Music Player.png",
+    live: "http://hammadgul-dev.github.io/music-player/",
+    github: "#",
   },
 ]
 
@@ -48,7 +76,6 @@ const Projects = () => {
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-cyan-500/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-6xl mx-auto px-6">
-        {/* Header */}
         <motion.div
           className="text-center mb-16"
           initial={{opacity: 0, y: 30}}
@@ -68,7 +95,6 @@ const Projects = () => {
           <div className="w-12 h-1 bg-cyan-400 mx-auto mt-4 rounded-full" />
         </motion.div>
 
-        {/* Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, i) => (
             <motion.div
@@ -79,13 +105,15 @@ const Projects = () => {
               transition={{duration: 0.4, delay: i * 0.1}}
               viewport={{once: true}}
             >
-              {/* Project Image */}
-              <div className="w-full h-44 bg-white/5 overflow-hidden">
-                {/* <img src={project.image} alt={project.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" /> */}
+              <div className="w-full h-44 bg-white/5 overflow-hidden p-2">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover rounded-xl group-hover:scale-102 transition-transform duration-500"
+                />
               </div>
 
-              {/* Content */}
-              <div className="p-6 flex flex-col gap-3 flex-1">
+              <div className="p-4 flex flex-col gap-2 flex-1">
                 <h3 className="text-white text-lg font-semibold group-hover:text-cyan-400 transition-colors duration-200">
                   {project.title}
                 </h3>
@@ -113,7 +141,6 @@ const Projects = () => {
             </motion.div>
           ))}
 
-          {/* Coming Soon Card */}
           <motion.div
             className="flex flex-col items-center justify-center text-center mt-10 gap-4"
             initial={{opacity: 0}}
