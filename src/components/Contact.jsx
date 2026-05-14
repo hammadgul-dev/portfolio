@@ -20,8 +20,15 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
 
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/
+
     if (!form.name || !form.email || !form.message) {
       setStatus("empty")
+      return
+    }
+
+    if (!emailRegex.test(form.email)) {
+      setStatus("invalid")
       return
     }
 
@@ -165,6 +172,11 @@ const Contact = () => {
               {status === "success" && (
                 <p className="text-green-400 text-sm text-center">
                   ✅ Message sent!
+                </p>
+              )}
+              {status === "invalid" && (
+                <p className="text-yellow-400 text-sm text-center">
+                  ⚠️ Enter a valid Gmail address.
                 </p>
               )}
               {status === "duplicate" && (
