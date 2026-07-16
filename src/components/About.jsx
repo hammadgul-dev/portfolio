@@ -1,17 +1,14 @@
 import {motion} from "framer-motion"
 import {FaGraduationCap, FaBriefcase, FaCode} from "react-icons/fa"
-
 const stats = [
-  {icon: <FaBriefcase />, value: "3+", label: "Years Experience"},
-  {icon: <FaCode />, value: "10+", label: "Projects Completed"},
+  {icon: <FaBriefcase />, value: "10+", label: "Projects Completed"},
+  {icon: <FaCode />, value: "6+", label: "Technologies Mastered"},
   {icon: <FaGraduationCap />, value: "4th", label: "Semester @ UET"},
 ]
-
 const About = () => {
   return (
     <section id="about" className="py-24 bg-[#0a0a0f] relative overflow-hidden">
       <div className="absolute top-0 right-0 w-96 h-96 bg-cyan-500/5 rounded-full blur-3xl pointer-events-none" />
-
       <div className="max-w-6xl mx-auto px-6">
         <motion.div
           className="text-center mb-16"
@@ -28,7 +25,6 @@ const About = () => {
           </h2>
           <div className="w-12 h-1 bg-cyan-400 mx-auto mt-4 rounded-full" />
         </motion.div>
-
         <div className="flex flex-col md:flex-row gap-12 items-start">
           <motion.div
             className="flex-1"
@@ -41,9 +37,9 @@ const About = () => {
               Hi, I'm <span className="text-cyan-400">Hammad Gul</span>
             </h3>
             <p className="text-gray-400 text-justify text-sm leading-relaxed mb-4">
-              A MERN Stack Developer with 3+ years of experience building
-              modern, scalable web applications — from clean responsive
-              frontends to solid backend APIs.
+              A MERN Stack Developer building modern, scalable web
+              applications — from clean responsive frontends to solid
+              backend APIs.
             </p>
             <p className="text-gray-400 text-justify text-sm leading-relaxed mb-4">
               I work with React.js, Node.js, Express.js, and MongoDB, along with
@@ -55,7 +51,6 @@ const About = () => {
               recently expanded my stack with TypeScript, Next.js, and Stripe
               payments. Still learning, still building.
             </p>
-
             <div className="flex items-start gap-4 bg-white/5 border border-white/10 rounded-xl p-4">
               <div className="text-cyan-400 text-2xl mt-1">
                 <FaGraduationCap />
@@ -70,7 +65,6 @@ const About = () => {
               </div>
             </div>
           </motion.div>
-
           <motion.div
             className="flex-1 w-full grid grid-cols-1 gap-6"
             initial={{opacity: 0, x: 40}}
@@ -96,5 +90,4 @@ const About = () => {
     </section>
   )
 }
-
 export default About
