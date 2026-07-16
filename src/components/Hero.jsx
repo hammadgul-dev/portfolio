@@ -51,7 +51,9 @@ const Hero = () => {
           </div>
 
           <p className="text-gray-400 text-justify text-sm leading-relaxed max-w-lg mb-8">
-            MERN Stack Developer building modern, scalable web apps — from responsive frontends to powerful backend APIs. Clean code, real results.
+            MERN Stack Developer building modern, scalable web apps — from
+            responsive frontends to powerful backend APIs. Clean code, real
+            results.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center md:items-start gap-4">
@@ -65,7 +67,9 @@ const Hero = () => {
               See Projects
             </Link>
             <button
-              onClick={() => window.open("/MERN_CV.pdf", "_blank")}
+              onClick={() =>
+                window.open(`${import.meta.env.BASE_URL}MERN_CV.pdf`, "_blank")
+              }
               className="px-7 py-3 border border-cyan-400 text-cyan-400 text-sm font-semibold rounded-full hover:bg-cyan-400 hover:text-black transition-all duration-300 cursor-pointer"
             >
               Download CV

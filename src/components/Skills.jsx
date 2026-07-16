@@ -34,6 +34,10 @@ const skills = [
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
   },
   {
+    name: "Framer Motion",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/framermotion/framermotion-original.svg",
+  },
+  {
     name: "Node.js",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
   },
@@ -44,6 +48,10 @@ const skills = [
   {
     name: "MongoDB",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+  },
+  {
+    name: "PostgreSQL",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
   },
   {
     name: "Git",
@@ -60,10 +68,6 @@ const skills = [
   {
     name: "VS Code",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
-  },
-  {
-    name: "Stripe",
-    icon: "https://cdn.simpleicons.org/stripe/635BFF",
   },
 ]
 

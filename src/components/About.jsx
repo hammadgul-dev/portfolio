@@ -1,8 +1,8 @@
 import {motion} from "framer-motion"
 import {FaGraduationCap, FaBriefcase, FaCode} from "react-icons/fa"
 const stats = [
-  {icon: <FaBriefcase />, value: "10+", label: "Projects Completed"},
-  {icon: <FaCode />, value: "6+", label: "Technologies Mastered"},
+  {icon: <FaBriefcase />, value: "3+", label: "Years Experience"},
+  {icon: <FaCode />, value: "10+", label: "Projects Completed"},
   {icon: <FaGraduationCap />, value: "4th", label: "Semester @ UET"},
 ]
 const About = () => {
@@ -37,9 +37,8 @@ const About = () => {
               Hi, I'm <span className="text-cyan-400">Hammad Gul</span>
             </h3>
             <p className="text-gray-400 text-justify text-sm leading-relaxed mb-4">
-              A MERN Stack Developer building modern, scalable web
-              applications — from clean responsive frontends to solid
-              backend APIs.
+              A MERN Stack Developer building modern, scalable web applications
+              — from clean responsive frontends to solid backend APIs.
             </p>
             <p className="text-gray-400 text-justify text-sm leading-relaxed mb-4">
               I work with React.js, Node.js, Express.js, and MongoDB, along with
