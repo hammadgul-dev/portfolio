@@ -37,13 +37,20 @@ const About = () => {
               Hi, I'm <span className="text-cyan-400">Hammad Gul</span>
             </h3>
             <p className="text-gray-400 text-justify text-sm leading-relaxed mb-4">
-             A Full Stack & MERN Stack Developer building modern, scalable web applications — from clean, responsive frontends to solid backend APIs.
+              A Full Stack & MERN Stack Developer building modern, scalable web
+              applications — from clean, responsive frontends to solid backend
+              APIs.
             </p>
             <p className="text-gray-400 text-justify text-sm leading-relaxed mb-4">
-              I work with React.js, Next.js, Node.js, Express.js, and MongoDB, along with TypeScript, JWT, REST APIs, TanStack Query, Redux Toolkit, and Tailwind CSS — always focused on clean code and quality output.
+              I work with React.js, Next.js, Node.js, Express.js, and MongoDB,
+              along with TypeScript, JWT, REST APIs, TanStack Query, Redux
+              Toolkit, and Tailwind CSS always focused on clean code and quality
+              output.
             </p>
             <p className="text-gray-400 text-justify text-sm leading-relaxed mb-8">
-              Currently pursuing BS Computer Engineering at UET Peshawar, while working on client projects on the side. I'm always picking up new tools and skills — still learning, still building.
+              Currently pursuing BS Computer Engineering at UET Peshawar, while
+              working on client projects on the side. I'm always picking up new
+              tools and skills — still learning, still building.
             </p>
             <div className="flex items-start gap-4 bg-white/5 border border-white/10 rounded-xl p-4">
               <div className="text-cyan-400 text-2xl mt-1">

@@ -37,11 +37,11 @@ const Hero = () => {
           <div className="text-lg md:text-xl text-gray-300 font-medium mb-6 h-8">
             <TypeAnimation
               sequence={[
+                "Full Stack Developer",
+                2000,
                 "MERN Stack Developer",
                 2000,
                 "React JS Developer",
-                2000,
-                "Full Stack Developer",
                 2000,
               ]}
               wrapper="span"
@@ -51,7 +51,9 @@ const Hero = () => {
           </div>
 
           <p className="text-gray-400 text-justify text-sm leading-relaxed max-w-lg mb-8">
-            Full Stack & MERN Stack Developer with 3+ years of experience building modern, scalable web apps — from responsive frontends to powerful backend APIs. Clean code, real results.
+            Full Stack & MERN Stack Developer with 3+ years of experience
+            building modern, scalable web apps — from responsive frontends to
+            powerful backend APIs. Clean code, real results.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center md:items-start gap-4">
