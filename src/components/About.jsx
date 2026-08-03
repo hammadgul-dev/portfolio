@@ -1,11 +1,13 @@
 import {motion} from "framer-motion"
 import {FaGraduationCap, FaBriefcase, FaCode} from "react-icons/fa"
-const stats = [
+
+let stats = [
   {icon: <FaBriefcase />, value: "3+", label: "Years Experience"},
   {icon: <FaCode />, value: "10+", label: "Projects Completed"},
-  {icon: <FaGraduationCap />, value: "4th", label: "Semester @ UET"},
+  {icon: <FaCode />, value: "15+", label: "Technologies Used"},
 ]
-const About = () => {
+
+let About = () => {
   return (
     <section id="about" className="py-24 bg-[#0a0a0f] relative overflow-hidden">
       <div className="absolute top-0 right-0 w-96 h-96 bg-cyan-500/5 rounded-full blur-3xl pointer-events-none" />
@@ -42,10 +44,10 @@ const About = () => {
               APIs.
             </p>
             <p className="text-gray-400 text-justify text-sm leading-relaxed mb-4">
-              I work with React.js, Next.js, Node.js, Express.js, and MongoDB,
-              along with TypeScript, JWT, REST APIs, TanStack Query, Redux
-              Toolkit, and Tailwind CSS always focused on clean code and quality
-              output.
+              I work with React.js, Next.js, Node.js, Express.js, MongoDB, and
+              PostgreSQL, along with TypeScript, Docker, AWS, Redis, JWT, REST
+              APIs, TanStack Query, Redux Toolkit, and Tailwind CSS — always
+              focused on clean code and quality output.
             </p>
             <p className="text-gray-400 text-justify text-sm leading-relaxed mb-8">
               Currently pursuing BS Computer Engineering at UET Peshawar, while
