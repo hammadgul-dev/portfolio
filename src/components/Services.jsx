@@ -6,6 +6,7 @@ import {
   FiLayout,
   FiShield,
   FiZap,
+  FiCloud,
 } from "react-icons/fi"
 
 const services = [
@@ -25,13 +26,13 @@ const services = [
     icon: <FiDatabase size={28} />,
     title: "Database Design",
     description:
-      "Designing and managing MongoDB databases with proper schema structure, relationships, and optimized queries.",
+      "Designing and managing MongoDB and PostgreSQL databases with proper schema structure, relationships, and optimized queries.",
   },
   {
-    icon: <FiCode size={28} />,
-    title: "Full Stack Apps",
+    icon: <FiZap size={28} />,
+    title: "API Integration",
     description:
-      "Delivering complete MERN stack web applications — from database to UI, everything built and integrated properly.",
+      "Integrating third-party services like Stripe payments, Google OAuth, Resend email, and more into full-stack applications.",
   },
   {
     icon: <FiShield size={28} />,
@@ -40,10 +41,10 @@ const services = [
       "Implementing secure JWT authentication, role-based access control, and best practices for web security.",
   },
   {
-    icon: <FiZap size={28} />,
-    title: "API Integration",
+    icon: <FiCloud size={28} />,
+    title: "Deployment & DevOps",
     description:
-      "Integrating third-party services like Stripe payments, Google OAuth, Resend email, and more into full-stack applications.",
+      "Containerizing applications with Docker and deploying scalable, production-ready apps on AWS.",
   },
 ]
 
