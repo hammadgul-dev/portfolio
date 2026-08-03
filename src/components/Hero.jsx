@@ -68,7 +68,10 @@ const Hero = () => {
             </Link>
             <button
               onClick={() =>
-                window.open(`${import.meta.env.BASE_URL}MERN_CV.pdf`, "_blank")
+                window.open(
+                  `${import.meta.env.BASE_URL}HammadGul_CV.pdf`,
+                  "_blank",
+                )
               }
               className="px-7 py-3 border border-cyan-400 text-cyan-400 text-sm font-semibold rounded-full hover:bg-cyan-400 hover:text-black transition-all duration-300 cursor-pointer"
             >
