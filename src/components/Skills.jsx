@@ -69,6 +69,18 @@ const skills = [
     name: "VS Code",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
   },
+  {
+    name: "Docker",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+  },
+  {
+    name: "Redis",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
+  },
+  {
+    name: "AWS",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+  },
 ]
 
 const Skills = () => {
@@ -117,7 +129,8 @@ const Skills = () => {
                   style={
                     skill.name === "Express.js" ||
                     skill.name === "GitHub" ||
-                    skill.name === "Next.js"
+                    skill.name === "Next.js" ||
+                    skill.name === "Framer Motion"
                       ? {filter: "invert(1)"}
                       : {}
                   }
