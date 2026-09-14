@@ -3,9 +3,9 @@ import {motion} from "framer-motion"
 import {FiMail, FiMapPin, FiPhone} from "react-icons/fi"
 import emailjs from "@emailjs/browser"
 
-const SERVICE_ID = "service_08f9yyh"
-const TEMPLATE_ID = "template_e1iynw9"
-const PUBLIC_KEY = "r5K5Q7cThT3vaszBo"
+const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID
+const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
+const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
 
 const Contact = () => {
   const [form, setForm] = useState({name: "", email: "", message: ""})
