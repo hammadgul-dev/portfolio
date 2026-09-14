@@ -3,9 +3,27 @@ import {FaExternalLinkAlt} from "react-icons/fa"
 
 const projects = [
   {
+    title: "HireSync",
+    description:
+      "Job platform with AI cover letter & CV generation, Google OAuth, and employer dashboard.",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "MongoDB",
+      "NextAuth",
+      "Groq AI",
+      "Cloudinary",
+      "PDFKit",
+    ],
+    image: "/portfolio/ProjectImages/Hiresync.png",
+    live: "https://hiresync-xi.vercel.app",
+    github: "https://github.com/hammadgul-dev/hiresync",
+  },
+  {
     title: "FreshCart",
     description:
-      "Full-stack eCommerce platform with JWT auth, dual product catalog, smart search, advanced filtering, cart management, and Cloudinary image storage.",
+      "eCommerce platform with JWT auth, smart search, filtering, and cart management.",
     tags: [
       "React",
       "Redux Toolkit",
@@ -23,7 +41,7 @@ const projects = [
   {
     title: "Blogify",
     description:
-      "Full-stack blog platform with JWT auth, Google OAuth, AI-powered descriptions & thumbnails, rich blog management, comment system, and dark/light mode.",
+      "Blog platform with Google OAuth, AI-generated content & thumbnails, and comments.",
     tags: [
       "React",
       "Redux Toolkit",
@@ -39,30 +57,21 @@ const projects = [
     github: "https://github.com/hammadgul-dev/blogify",
   },
   {
-    title: "Code Editor",
-    description:
-      "Real-time online code editor with live preview, multi-panel layout for HTML/CSS/JS, theme switcher, and copy to clipboard.",
-    tags: ["HTML", "CSS", "JavaScript"],
-    image: "/portfolio/ProjectImages/CodeEditor.png",
-    live: "https://hammadgul-dev.github.io/code-editor/",
-    github: "#",
-  },
-  {
     title: "Advanced Product Page",
     description:
-      "React product page with Redux state management, user login, product filtering & sorting, image upload, and LocalStorage persistence.",
+      "React product page with Redux, filtering & sorting, and LocalStorage persistence.",
     tags: ["React", "Redux", "React Router"],
     image: "/portfolio/ProjectImages/ProductPage.png",
     live: "https://hammadgul-dev.github.io/advance-product-page/",
     github: "#",
   },
   {
-    title: "Music Player",
+    title: "Code Editor",
     description:
-      "Lightweight music player with play/pause, next/prev navigation, volume control, keyboard shortcuts, and fully responsive UI.",
+      "Real-time code editor with live preview for HTML/CSS/JS and theme switcher.",
     tags: ["HTML", "CSS", "JavaScript"],
-    image: "/portfolio/ProjectImages/MusicPlayer.png",
-    live: "http://hammadgul-dev.github.io/music-player/",
+    image: "/portfolio/ProjectImages/CodeEditor.png",
+    live: "https://hammadgul-dev.github.io/code-editor/",
     github: "#",
   },
 ]
@@ -104,7 +113,7 @@ const Projects = () => {
               transition={{duration: 0.4, delay: i * 0.1}}
               viewport={{once: true}}
             >
-              <div className="w-full h-44 bg-white/5 overflow-hidden p-2">
+              <div className="w-full h-36 bg-white/5 overflow-hidden p-2">
                 <img
                   src={project.image}
                   alt={project.title}
@@ -131,7 +140,7 @@ const Projects = () => {
                 </div>
                 <button
                   onClick={() => window.open(project.live, "_blank")}
-                  className="flex items-center gap-2 text-sm text-white border border-white/20 px-4 py-2 rounded-full hover:border-cyan-400 hover:text-cyan-400 transition-all duration-200 cursor-pointer w-fit mt-2"
+                  className="flex items-center justify-center gap-2 text-sm text-white border border-white/20 px-4 py-2 rounded-full hover:border-cyan-400 hover:text-cyan-400 transition-all duration-200 cursor-pointer w-full mt-2"
                 >
                   <FaExternalLinkAlt className="text-xs" />
                   Live Demo
